@@ -1,7 +1,7 @@
 @import "abstracts/color";
 @import "base/reset";
 @import "components/button";
-
+@import "base/media";
 
 // Navbar :start
 #navbar{
@@ -74,7 +74,7 @@
 // Header :start
 .headbar{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,3 +468,168 @@
 
 }
 // Team :end
+// Visit :start
+.visit{
+    width: 100%;
+    height: 414px;
+    display: flex;
+    justify-content: center;
+        .visitleft{
+            width: 750px;
+            height: 100%;
+            background-color: $goy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .visitbox{
+                width: 70%;
+                height: 90%;
+                color: $ag;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-direction: column;
+            }
+                h2{
+                    font-size: 38px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                input{
+                    height: 40px;
+                    width: 400px;
+                    border: 0;
+                    border-bottom: 1px solid #BECCD6;
+                    background-color: $goy;
+                }
+                input::placeholder{
+                    color: $ag;
+                    font-size: 20px;
+                }
+                button{
+                    width: 135px;
+                    height: 50px;
+                    background-color: $mavi;
+                    color: $ag;
+                    font-size: 20px;
+                }
+        .visitright{
+            width: 750px;
+            height: 100%;            background-image: url(https://preview.colorlib.com/theme/konato/assets/img/gallery/subscribe-img.jpg.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+}
+// Visit :end
+// Footer :start
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: $ag;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footerbox{
+        width: 90%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+        .konata{
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 10px;
+        }
+            img{
+                width: 156px;
+                height: 55px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .social{
+                display: flex;
+                gap: 10px;
+            }
+                i{
+                    color: $boz;
+                    animation-name: i;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                }
+
+        .nav{
+            width: 250px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+            gap: 30px;
+        }
+            #nav{
+                padding-top:30px ;
+            }
+            h4{
+                font-size: 20px;
+            }
+            #contact{
+                padding-bottom: 32px;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+                a{
+                    text-decoration: none;
+                    color: $boz;
+                    font-size: 18px;
+                }
+                    a:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                .mail{
+                    font-size: 16px;
+                }
+                .number{
+                    font-size: 22px;
+                    color: $goy;
+                }
+            @keyframes i{
+                from{
+                    transform: rotateY(0deg);
+                }
+                to{
+                    transform: rotateY(180deg);
+                }
+            }
+
+}
+// Footer :end
+// Ending :start
+.ending{
+    width: 100%;
+    height: 60px;
+    background-color: #f2f6f9;
+    text-align: center;
+    padding-top: 20px;
+        a{
+            text-decoration: none;
+            color: $mavi;
+        }
+        i{
+            color: $mavi;
+        }
+}
+// Ending :end

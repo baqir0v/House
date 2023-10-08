@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1000px) {
+  .headbox {
+    flex-direction: column;
+  }
+}
 #navbar {
   position: sticky;
   top: 0;
@@ -71,7 +76,7 @@
 
 .headbar {
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,4 +453,169 @@
 }
 .team p {
   font-size: 18px;
+}
+
+.visit {
+  width: 100%;
+  height: 414px;
+  display: flex;
+  justify-content: center;
+}
+.visit .visitleft {
+  width: 750px;
+  height: 100%;
+  background-color: #004274;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visit .visitbox {
+  width: 70%;
+  height: 90%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.visit h2 {
+  font-size: 38px;
+}
+.visit p {
+  font-size: 18px;
+}
+.visit input {
+  height: 40px;
+  width: 400px;
+  border: 0;
+  border-bottom: 1px solid #BECCD6;
+  background-color: #004274;
+}
+.visit input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.visit input::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+.visit button {
+  width: 135px;
+  height: 50px;
+  background-color: #00a0eb;
+  color: #ffffff;
+  font-size: 20px;
+}
+.visit .visitright {
+  width: 750px;
+  height: 100%;
+  background-image: url(https://preview.colorlib.com/theme/konato/assets/img/gallery/subscribe-img.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerbox {
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .konata {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10px;
+}
+footer img {
+  width: 156px;
+  height: 55px;
+}
+footer p {
+  font-size: 18px;
+}
+footer .social {
+  display: flex;
+  gap: 10px;
+}
+footer i {
+  color: #7f7f7f;
+  animation-name: i;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+footer .nav {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 30px;
+}
+footer #nav {
+  padding-top: 30px;
+}
+footer h4 {
+  font-size: 20px;
+}
+footer #contact {
+  padding-bottom: 32px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #7f7f7f;
+  font-size: 18px;
+}
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer .mail {
+  font-size: 16px;
+}
+footer .number {
+  font-size: 22px;
+  color: #004274;
+}
+@keyframes i {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.ending {
+  width: 100%;
+  height: 60px;
+  background-color: #f2f6f9;
+  text-align: center;
+  padding-top: 20px;
+}
+.ending a {
+  text-decoration: none;
+  color: #00a0eb;
+}
+.ending i {
+  color: #00a0eb;
 }/*# sourceMappingURL=style.css.map */
