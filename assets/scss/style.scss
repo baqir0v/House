@@ -4,7 +4,7 @@
 
 
 // Navbar :start
-.navbar{
+#navbar{
     position: sticky;
     top: 0;
     width: 100%;
@@ -27,7 +27,7 @@
                 background-color: $mavi;
                 border: none;
                 color: $ag;
-                transition: 0.7s;
+                transition: 0.6s;
             }
                 button:hover{
                     background-color: $goy;
@@ -127,6 +127,344 @@
                     background-color: $goy;
                     color: $ag;
                 }
+                    button:hover{
+                        cursor: pointer;
+                        filter: brightness(80%);
+                    }
 
 
 }
+// Header :end
+// Hero :start
+.hero{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    .herobox{
+        padding-right: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $ag;
+    }
+        .text{
+            
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .price{
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        button{
+            margin-top: 20px;
+            width: 160px;
+            height: $h;
+            background-color: $mavi;
+            color: $ag;
+            border: none;
+            border-radius: $radius1;
+        }
+            button:hover{
+                cursor: pointer;
+                background-color: $goy;
+            }
+}
+// Hero :end
+// Items :start
+.items{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .itemsbox{
+            width: 80%;
+            height: 700px;
+            
+        }
+            .itemshead{
+                width: 100%;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+                h2{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            .boxes{
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: space-between;
+
+            }
+                .box{
+                    width: 350px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .box:hover{
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    .middle{
+                        border: 1px solid #BECCD6;
+                        width: 100%;
+                        height: 220px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        padding-left: 18px;
+
+                    }
+                        .price{
+                            padding-top: 10px;
+                            font-size: 25px;
+                            color: $mavi;
+                        }
+                        a{
+                            font-size: 30px;
+                            color: black;
+                            text-decoration: none;
+                        }
+                        p{
+                            font-size: 20px;
+                            color: $boz;
+                        }
+                    .bottom{
+                        width: 100%;
+                        height: 94px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 1px solid #BECCD6;
+                        border-left: 1px solid #BECCD6;
+                        border-right: 1px solid #BECCD6;
+
+                    }
+                        .bottombox{
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+                            .icon{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+                            i{
+                                color: $boz;
+                            }
+}
+// Items :end
+// Services :start
+.services{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://preview.colorlib.com/theme/konato/assets/img/gallery/section-bg1.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .servbox{
+            width: 80%;
+            height: 400px;
+        }
+            .servhead{
+                width: 100%;
+                height: 100px;
+                text-align: center;
+            }
+                h2{
+                    font-size: 50px;
+                    color: $ag;
+                }
+            .boxes{
+                width: 100%;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+            }
+                .singlebox{
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $ag;
+                    background-color: $mavi;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    gap: 20px;
+                }
+                    i{
+                        font-size: 50px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $ag;
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+}
+// Services :end
+// Categories :start
+.categories{
+    width: 100%;
+    height: 500px;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .catbox{
+            width: 90%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .catleft{
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                button{
+                    height: $h;
+                    width:  200px;
+                    border-radius: $radius1;
+                    border: none;
+                    background-color: $mavi;
+                    color: $ag;
+                }
+                    button:hover{
+                        cursor: pointer;
+                        background-color: $goy;
+                    }
+            .catright{
+                width: 900px;
+                height: 60%;
+                background-color: $ag;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+                .box{
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                    .box:hover{
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: black;
+                    }
+                        a:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: $mavi;
+                        }
+}
+// Categories :end
+// Team :start
+.team{
+    width: 100%;
+    height: 700px;
+    background-color: $ag;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+        .teamtop{
+            text-align: center;
+        }
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+                color: $boz;
+            }
+        .teambottom{
+            width: 100%;
+            height: 420px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+                a{
+                    font-size:25px ;
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                    img{
+                        max-width:100% ;
+                        max-height: 100%;
+                        transition: all 0.6s ease-in-out;
+                    }
+                        img:hover{
+                            transform: scale(1.1);
+                            max-width:100% ;
+                            max-height: 100%;
+                        }
+                    a:hover{
+                        cursor: pointer;
+                        color: $mavi;
+                    }
+                p{
+                    font-size: 18px;
+                }
+
+}
+// Team :end
